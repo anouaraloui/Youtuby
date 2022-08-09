@@ -1,0 +1,321 @@
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    }
+    
+    button {
+    border-radius: 0;
+    }
+    
+    button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    }
+    
+    input,
+    button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    }
+    
+    .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+    .row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    }
+    
+    .col-4,
+    .col-8,
+    .col-md-12,
+    .col-lg-4,
+    .col-xl-8 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+    .col-4 {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+    }
+    
+    .col-8 {
+    max-width: 66.66667%;
+    flex: 0 0 66.66667%;
+    }
+    .form-control {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    height: calc(2.75rem + 2px);
+    padding: .625rem .75rem;
+    transition: all .2s cubic-bezier(.68, -.55, .265, 1.55);
+    color: #8898aa;
+    border: 1px solid #cad1d7;
+    border-radius: .375rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: none;
+    font-size: .875rem;
+    }
+    .form-control::-ms-expand {
+    border: 0;
+    background-color: transparent;
+    }
+    
+    .form-control:focus {
+    color: #8898aa;
+    border-color: rgba(50, 151, 211, .25);
+    outline: 0;
+    background-color: #fff;
+    box-shadow: none, none;
+    }
+    
+    .form-control:-ms-input-placeholder {
+    opacity: 1;
+    color: #adb5bd;
+    }
+    
+    .form-control::-ms-input-placeholder {
+    opacity: 1;
+    color: #adb5bd;
+    }
+    
+    .form-control::placeholder {
+    opacity: 1;
+    color: #adb5bd;
+    }
+    
+    .form-control:disabled,
+    .form-control[readonly] {
+    opacity: 1;
+    background-color: #e9ecef;
+    }
+    
+    .form-control-label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #525f7f;
+    }
+    
+    
+    
+    .form-control:focus:-ms-input-placeholder {
+    color: #adb5bd;
+    }
+    
+    .form-control:focus::-ms-input-placeholder {
+    color: #adb5bd;
+    }
+    
+    .form-control:focus::placeholder {
+    color: #adb5bd;
+    }
+    
+    
+    .form-control-alternative {
+    transition: box-shadow .15s ease;
+    border: 0;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+    }
+    
+    .form-control-alternative:focus {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    }
+    
+    .focused .form-control {
+    border-color: rgba(50, 151, 211, .25);
+    }
+    
+    .focused .form-control {
+    border-color: rgba(50, 151, 211, .25);
+    }
+    
+    .form-group {
+    margin-bottom: 1.5rem;
+    margin-right: 3.5rem;
+    }
+    a {
+        text-decoration: none;
+        
+    }
+    
+    .btn{
+    position: relative;
+    transition: all .15s ease;
+    letter-spacing: .025em;
+    text-transform: none;
+    will-change: transform;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    display: inline-block;
+    padding: .625rem 1.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: .375rem;
+    }
+    
+    .btn:hover , a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    }
+    
+    .btn:hover,
+    .btn:focus {
+    text-decoration: none;
+    }
+    
+    .btn:focus {
+    outline: 0;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    }
+    
+    
+    
+    .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: .375rem;
+    background-color: #fff;
+    background-clip: border-box;
+    }
+    
+    .card-body {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+    }
+    
+    .card-header {
+    margin-bottom: 0;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    background-color: #fff;
+    }
+    
+    .card-header:first-child {
+    border-radius: calc(.375rem - 1px) calc(.375rem - 1px) 0 0;
+    }
+    
+    .shadow {
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+    }
+    
+    .mb-0 {
+    margin-bottom: 0 !important;
+    }
+    
+    .my-4 {
+    margin-top: 1.5rem !important;
+    }
+    
+    .mb-4,
+    .my-4 {
+    margin-bottom: 1.5rem !important;
+    }
+    
+    .mb-5 {
+    margin-bottom: 3rem !important;
+    }
+    
+    
+    .m-auto {
+    margin: auto !important;
+    }
+    
+    .main-content {
+    position: relative;
+    }
+    
+    .heading-small {
+    font-size: .75rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    }
+    
+    .text-muted {
+    color: #8898aa !important;
+    }
+    
+    @media (min-width: 576px) {
+    .container {
+    max-width: 540px;
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .container {
+    max-width: 720px;
+    }
+    .col-md-12 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .container {
+    max-width: 960px;
+    }.col-lg-4 {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .container {
+    max-width: 1140px;
+    }
+    .justify-content-xl-between {
+    justify-content: space-between !important;
+    }
+    .col-xl-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+    }
+    
+    .col-xl-8 {
+    max-width: 66.66667%;
+    flex: 0 0 66.66667%;
+    }
+    
+    .order-xl-1 {
+    order: 1;
+    }
+    
+    }
+    @media (max-width: 768px) {
+    
+    .btn {
+    margin-bottom: 10px;
+    }
+    
+    }
+    
+    

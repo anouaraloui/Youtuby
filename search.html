@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTuBy | Search</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="mt-5 ">
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+                <i class="fas fa-bars fa-lg" id="toggler"></i>
+                    <b>
+                        <a class="navbar-brand m-2" href="youtuby.html">
+                            YouTuBy <span><i class="fas fa-play-circle logo"></i></span></a>
+                        </a>
+                    </b>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto  ">
+                        <li class="nav-item first-list-element " tabindex="3">
+                        <a class="nav-link px-3 ml-1 mr-3" href="youtuby.html">Suggested </a>
+                        </li>
+                        <li class="nav-item " tabindex="4">
+                        <a class="nav-link px-3 ml-1 mr-4 " href="new.html">New</a>
+                        </li>
+                        <li class="nav-item ">
+                        <a class="nav-link px-3 ml-1 mr-4" href="trending.html" tabindex="1">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link pl-0 " href="history.html" tabindex="1">History</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" >
+                        <button onclick="location.href='search.html';" class="btn btn-outline-info search my-2 my-sm-0 " type="submit">Search</button>
+                    </div>
+                    </div>
+                    <i class="fas fa-search mr-4 search-icon"></i>
+                    <a class="nav-link login" href="#" data-toggle="modal" data-target="#loginModel" >Sign In</a>  
+                </nav>
+                <input type="search" class="form-control search-input" placeholder="search...">
+                                <!-- Sign In & Sign Up -->
+                                <div class="modal fade" id="loginModel" tabindex="-1">
+                                <div class="modal-dialog model-dialog-centered">
+                                    <div class="modal-content">
+                                    <head><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/></head>
+                                    <div class="container-fluid ">
+                                            <div class="row sign-in">
+                                                <h1><i class="fa fa-lock" aria-hidden="true"></i> Login</h1>
+                                            </div><br/><br/>
+                                            <div class="input-group ml-2">
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                                                </div>
+                                                <input type="text" name="" class="form-control" placeholder="username or email"/>
+                                                </div><br/>                  
+                                            <div class="input-group ml-2">
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+                                                </div>
+                                                <input type="Password" name="" class="form-control" placeholder="password"/>
+                                            </div><br />
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""/> Remember me</label>
+                                            </div><br/>
+                                            <button type="submit" class="btn btn-info mr-2"><span class="glyphicon glyphicon-off"></span> Login</button>
+                                            <button type="submit" class="btn btn-info "><span class="glyphicon glyphicon-remove"></span>Login with Facebook </button><br />
+                                                <br><center><div style="border:1px solid black;height:1px;width:300px;"></div></center><br>
+                                            <div class="footer">
+                                                <p>Don't have an Account! <a href="#">Sign Up Here</a></p>
+                                                <p>Forgot <a href="#">Password?</a></p>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div id="wrap">
+                                        <div class="sidebar">
+                                            <ul class="list-group list-group-flush pl-0 ">
+                                                <div class="sidebar">
+                                                <ul class="list-group list-group-flush pl-0">
+                                                    <a href="youtuby.html" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-home ml-2 purple"></i> Home
+                                                    </a>
+                                                    <a href="youtuby.html" class="list-group-item list-group-item-action">
+                                                        <i class="far fa-plus-square ml-2 purple"></i> Suggested
+                                                        </a>
+                                                        <a href="new.html" class="list-group-item list-group-item-action">
+                                                            <i class="fab fa-algolia ml-2 purple"></i> New
+                                                        </a>
+                                                    <a href="trending.html" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-fire-alt ml-2 purple"></i> Trending
+                                                    </a>
+                                                    <a href="chanel.html" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-fire-alt ml-2 purple"></i> My videos
+                                                    </a>
+                                                    <a href="history.html" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-history ml-2 purple"></i> History
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action">
+                                                        <i class="far fa-share-square ml-2 purple"></i> Subscriptions
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-film ml-2 purple"></i> Movies and Shows
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-gamepad ml-2 purple"></i> Video Games
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-tshirt ml-2 purple"></i> Fashion and beauty
+                                                    </a>
+                                                    <a href="https://www.youtube.com/channel/UCwQJ9avKgKMsPF3EgDw9DyQ" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-graduation-cap ml-2 purple"></i> Educational content
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-cog ml-2 purple"></i> Settings
+                                                    </a>
+                                                    <a href="#" class="list-group-item list-group-item-action">
+                                                        <i class="fas fa-question-circle ml-2 purple"></i> Help
+                                                    </a>
+                                                    <a href="https://github.com/alouianwer" class="ml-2 mb-5">Front-end Developer <br>Anwer Aloui<br>
+                                                        &copy; 2022
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+            <div class="search-header pt-5">
+                <div class="container ">
+                <div class="row">
+                    <div class="col-6">
+                    Around 700 results
+                    </div>
+                    <div class="col-6 mt-5">
+                    <span class="float-left" id="search-filters-icon"><i class="fas fa-filter"></i> FILTERS</span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 col-lg-3 filter-column">
+                        <div class="text-center">Upload date</div>
+                        <hr>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName">
+                            <span>Last hour</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName">
+                            <span>Today</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName">
+                            <span>This week</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName">
+                            <span>This month</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName">
+                            <span>This year</span>
+                        </label>
+                    </div>
+                    <div class="col-md-6 col-lg-3 filter-column">
+                        <div class="text-center">Type</div>
+                        <hr>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName2">
+                            <span>Video</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName2">
+                            <span>Channel</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName2">
+                            <span>Playlist</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName2">
+                            <span>Film</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName2">
+                            <span>Show</span>
+                        </label>
+                    </div>
+                    <div class="col-md-6 col-lg-3 filter-column">
+                        <div class="text-center">Sort by</div>
+                        <hr>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName3">
+                            <span>Relevancy</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName3">
+                            <span>Upload date</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName3">
+                            <span>Views</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName3">
+                            <span>Evaluation</span>
+                        </label>
+                    </div>
+                    <div class="col-md-6 col-lg-3 filter-column">
+                        <div class="text-center">Duration</div>
+                        <hr>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName4">
+                            <span>Under 5 minutes</span>
+                        </label>
+                        <label class="d-block mb-3">
+                            <input type="checkbox" name="CheckBoxInputName4">
+                            <span>5-15 minutes</span>
+                        </label>
+                        <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName4">
+                        <span>Over 15 minutes</span>
+                    </label>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mb-4">
+                  <div class="col-sm-12 ">
+                      <div class="card">
+                          <div class="card-horizontal d-md-flex d-block">
+                              <div class="card-icons col-xl-5">
+                                  <a href="watch.html">
+                                      <img class="mr-4 card-top-image w-100" src="images/devtools.jpg" alt="Card image cap">
+                                      <time>21:42</time>
+                                      <i class="fas fa-play fa-2x"></i>
+                                  </a>
+                              </div>
+                              <div class="card-body col-xl-7 p-2">
+                                  <a href="watch.html"><h4>Chrome DevTools is a set of web developer tools | Anouar Aloui </h4></a>
+                                  <p>Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. These tools let you inspect the rendered HTML (DOM) and network activity of your pages. You can use DevTools to troubleshoot ad serving issues.
+                                  </p>
+                                  <small class="text-muted">
+                                  <i class="fas fa-film"></i> <span>1 M views</span>
+                                  <i class="fas fa-clock"></i> <span>9 months ago</span>
+                                  </small>
+                                  <a href="chanel.html" class="channel-img">
+                                  <img src="images/anwlog.png" alt="anweraloui" width="30" class="rounded-circle ms-3">
+                                  <span class="card-text">Anouar Aloui</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-sm-12 ">
+                      <div class="card">
+                          <div class="card-horizontal d-md-flex d-block">
+                              <div class="card-icons col-xl-5">
+                                  <a href="watch.html">
+                                      <img class="mr-4 card-top-image w-100" src="images/database.jpg" alt="Card image cap">
+                                      <time>17:22</time>
+                                      <i class="fas fa-play fa-2x"></i>
+                                  </a>
+                              </div>
+                              <div class="card-body col-xl-7 p-2">
+                                  <a href="watch.html"><h4>SQL Tutorial - Full Database Course for Beginners | Anouar Aloui </h4></a>
+                                  <p>The course is designed for beginners to SQL and database management systems, and will introduce common database management topics.
+                                  </p>
+                                  <small class="text-muted">
+                                  <i class="fas fa-film"></i> <span>1 M views</span>
+                                  <i class="fas fa-clock"></i> <span>1 year ago</span>
+                                  </small>
+                                  <a href="chanel.html" class="channel-img">
+                                  <img src="images/anwlog.png" alt="anweraloui" width="30" class="rounded-circle ms-3">
+                                  <span class="card-text">Anouar Aloui</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                <div class="col-sm-12 ">
+                    <div class="card">
+                        <div class="card-horizontal d-md-flex d-block">
+                            <div class="card-icons col-xl-5">
+                                <a href="watch.html">
+                                    <img class="mr-4 card-top-image w-100" src="images/ruby.jpg" alt="Card image cap">
+                                    <time>07:15</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="card-body col-xl-7 p-2">
+                                <a href="watch.html"><h4>Ruby Programming Language - Full Course | Anouar Aloui </h4></a>
+                                <p>Learn the Ruby programming language in this full course / tutorial. The course is designed for new programmers, and will introduce common programming topics using the ruby language.
+                                </p>
+                                <small class="text-muted">
+                                <i class="fas fa-film"></i> <span>3.5 K views</span>
+                                <i class="fas fa-clock"></i> <span>3 months ago</span>
+                                </small>
+                                <a href="chanel.html" class="channel-img">
+                                <img src="images/anwlog.png" alt="anweraloui" width="30" class="rounded-circle ms-3">
+                                <span class="card-text">Anouar Aloui</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-sm-12">
+                      <div class="card">
+                          <div class="card-horizontal d-md-flex d-block">
+                              <div class="card-icons col-xl-5">
+                                  <a href="watch.html">
+                                      <img class="mr-4 card-top-image w-100" src="images/developer.jpg" alt="Card image cap">
+                                      <time>35:50</time>
+                                      <i class="fas fa-play fa-2x"></i>
+                                  </a>
+                              </div>
+                              <div class="card-body col-xl-7 p-2">
+                                  <a href="watch.html"><h4>What Is Full Stack? | What Is Full Stack Web Development | Anouar Aloui </h4></a>
+                                  <p>Full Stack is one of the commonly heard phrases today. But what exactly is it? And what does it encompass? This video will answer all your questions.
+                                  </p>
+                                  <small class="text-muted">
+                                  <i class="fas fa-film"></i> <span>2 M views</span>
+                                  <i class="fas fa-clock"></i> <span>5 months ago</span>
+                                  </small>
+                                  <a href="chanel.html" class="channel-img">
+                                  <img src="images/anwlog.png" alt="anweraloui" width="30" class="rounded-circle ms-3">
+                                  <span class="card-text">Anouar Aloui</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-horizontal d-md-flex d-block">
+                                <div class="card-icons col-xl-5">
+                                    <a href="watch.html">
+                                        <img class="mr-4 card-top-image w-100" src="images/gitlab.jpg" alt="Card image cap">
+                                        <time>15:30</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="card-body col-xl-7 p-2">
+                                    <a href="watch.html"><h4>GitLab Tutorial For Beginners, What Is GitLab And How To Use It? | Anouar Aloui </h4></a>
+                                    <p>This GitLab tutorial will help you learn the basics of Gitlab with the help of a used case. We will determine the relevance of GitLab and discuss some of its features. Then we shall see a hands-on demo showing how we can make our first project in GitLab.
+                                    </p>
+                                    <small class="text-muted">
+                                    <i class="fas fa-film"></i> <span>15k views</span>
+                                    <i class="fas fa-clock"></i> <span>1 months ago</span>
+                                    </small>
+                                    <a href="chanel.html" class="channel-img">
+                                    <img src="images/anwlog.png" alt="anweraloui" width="30" class="rounded-circle ms-3">
+                                    <span class="card-text">Anouar Aloui</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="https://kit.fontawesome.com/597cb1f685.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<script src="js/search.js"></script>
+<script src="js/watch.js"></script>  
+</body>
+</html>

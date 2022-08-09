@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>YouTuBy | watch</title>
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/watch.css">
+
+</head>
+<body class="mt-5 ">
+  <div class="layer"></div>
+  <div id="top-menu ">
+    <div class="container-fluid ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <i class="fas fa-bars fa-lg" id="toggler"></i>
+            <b>
+                <a class="navbar-brand m-2" href="youtuby.html">
+                    YouTuBy <span><i class="fas fa-play-circle logo"></i></span></a>
+                  </a>
+            </b>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto  ">
+                <li class="nav-item first-list-element " tabindex="3">
+                  <a class="nav-link px-3 ml-1 mr-3" href="youtuby.html">Suggested </a>
+                </li>
+                <li class="nav-item " tabindex="4">
+                  <a class="nav-link px-3 ml-1 mr-4 " href="new.html">New</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link px-3 ml-1 mr-4" href="trending.html" tabindex="1">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-0 " href="history.html" tabindex="1">History</a>
+                </li>
+                
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" >
+                <button onclick="location.href='search.html';" class="btn btn-outline-info search my-2 my-sm-0 " type="submit">Search</button>
+              </div>
+            </div>
+              <i class="fas fa-search mr-4 search-icon"></i>
+              <a class="nav-link login" href="#" data-toggle="modal" data-target="#loginModel" >Sign In</a>
+            
+        </nav>
+        <input type="search" class="form-control search-input" placeholder="search...">
+            <!-- Sign In & Sign Up -->
+            <div class="modal fade" id="loginModel" tabindex="-1">
+              <div class="modal-dialog model-dialog-centered">
+                <div class="modal-content">
+                  <head><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/></head>
+                        <div class="container-fluid ">
+                          <div class="row sign-in">
+                            <h1><i class="fa fa-lock" aria-hidden="true"></i> Login</h1>
+                                </div><br /><br />
+                                
+                                
+                                          <div class="input-group ml-2">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                                        </div>
+                                        <input type="text" name="" class="form-control" placeholder="username or email"/>
+                                      </div><br />
+                                
+                                          <div class="input-group ml-2">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+                                        </div>
+                                          <input type="Password" name="" class="form-control" placeholder="password"/>
+                                      </div><br />
+                                    <div class="checkbox">
+                                      <label><input type="checkbox" value=""/> Remember me</label>
+                                    </div><br />
+                                      <button type="submit" class="btn btn-info mr-2"><span class="glyphicon glyphicon-off"></span> Login</button>
+                                
+                                <button type="submit" class="btn btn-info "><span class="glyphicon glyphicon-remove"></span>Login with Facebook </button><br />
+                                      <br><center><div style="border:1px solid black;height:1px;width:300px;"></div></center><br>
+                                <div class="footer">
+                                          <p>Don't have an Account! <a href="#">Sign Up Here</a></p>
+                                  <p>Forgot <a href="#">Password?</a></p>
+                                </div>
+                        
+                          </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+                <div id="wrap">
+                    <div class="sidebar">
+                        <ul class="list-group list-group-flush pl-0 ">
+                            <div class="sidebar">
+                              <ul class="list-group list-group-flush pl-0">
+                                  <a href="youtuby.html" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-home ml-2 purple"></i> Home
+                                  </a>
+                                  <a href="youtuby.html" class="list-group-item list-group-item-action">
+                                      <i class="far fa-plus-square ml-2 purple"></i> Suggested
+                                    </a>
+                                    <a href="new.html" class="list-group-item list-group-item-action">
+                                        <i class="fab fa-algolia ml-2 purple"></i> New
+                                    </a>
+                                  <a href="trending.html" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-fire-alt ml-2 purple"></i> Trending
+                                  </a>
+                                  <a href="chanel.html" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-fire-alt ml-2 purple"></i> My videos
+                                  </a>
+                                  <a href="history.html" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-history ml-2 purple"></i> History
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action">
+                                      <i class="far fa-share-square ml-2 purple"></i> Subscriptions
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-film ml-2 purple"></i> Movies and Shows
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-gamepad ml-2 purple"></i> Video Games
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-tshirt ml-2 purple"></i> Fashion and beauty
+                                  </a>
+                                  <a href="https://www.youtube.com/channel/UCwQJ9avKgKMsPF3EgDw9DyQ" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-graduation-cap ml-2 purple"></i> Educational content
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-cog ml-2 purple"></i> Settings
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action">
+                                      <i class="fas fa-question-circle ml-2 purple"></i> Help
+                                  </a>
+                                  <a href="https://github.com/alouianwer" class="ml-2 mb-5">Front-end Developer <br>Anwer Aloui<br>
+                                      &copy; 2022
+                                    </a>
+                                </ul>
+                            </div>
+                          </ul>
+                      </div>
+                </div>
+            </div>
+        <div class="watch-page pt-5 pl-4">
+          <div class="container-fluid">
+            <div class="card border-0">
+              <div class="row ">
+                <div class="col-lg-7">
+                    <video src="video/videochanel.mp4" controls poster="images/Anwerportfolio.png" autoplay muted class="w-100">
+                      <track kind="captions" src=".vtt" srclang="ENG" label="Englisch" default>
+                      <track kind="captions" src=".vtt" srclang="DE" label="German" default>
+                      Your browser does not support the element<code>video</code>
+                    </video>
+                </div>
+                  <div class="col-lg-5 mt-3">
+                    <div class="card-head mb-2">
+                        <small class="text-muted">
+                            <i class="fas fa-film"></i> <span>3k views</span>
+                            <i class="fas fa-clock"></i> <span>7 months ago</span>
+                        </small>
+                    </div>
+                    <div class="card-block ml-3">
+                      <a href="watch.html"><h4> How to Create a Responsive Personal Portfolio Website Using HTML CSS JavaScript </h4></a>
+                            <p>  In today's tutorial, you will learn how to make a complete responsive personal portfolio website design by using HTML CSS and Vanilla JavaScript from scratch. I hope you will like this portfolio website design. Feel free to download the source code of this responsive personal portfolio website .
+                              Main Features ***
+                                <span id="dots"> ...</span><ol id="more" >
+                                <li>  High-quality Design</li>
+                                <li>  Built-with HTML5 , CSS3 and JavaScript</li>
+                                <li>  100% Responsive Design</li>
+                                <li>  Clean Code</li>
+                                <li>  Well-commented code</li>
+                                <li>  Live Style Switcher</li>
+                                <li>  5 Color Skins</li>
+                                <li>  Light/Dark</li>  
+                            </ol>
+                            </p>
+                            <button class="btn mb-3" id="myBtn">Read More</button>
+                    </div>
+                    <div class="wrapper float-right">
+                      <div class="icon">
+                        <div class="title-icon">Like</div>
+                        <span><i class="fas fa-thumbs-up"></i></span>
+                      </div>
+                      <div class="icon">
+                        <div class="title-icon">Deslike</div>
+                        <span><i class="fas fa-thumbs-down"></i></span>
+                      </div>
+                      <div class="icon">
+                        <div class="title-icon">Share</div>
+                        <span><i class="fas fa-share"></i></span>
+                      </div>
+                      <div class="icon">
+                        <div class="title-icon">Raport</div>
+                        <span><i class="fas fa-flag"></i></span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row mt-4 px-2">
+              <div class="col-lg-7  order-2 order-lg-1">
+                <div class="comments">
+                  <div class="comments-details mb-3">
+                    <span class="mr-4">2 Comments</span>
+                    <span class="dropdown">
+                        <span class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-filter m-1 filtre-comment"></i> Sort By
+                        </span>
+                        <div class="dropdown-menu" >
+                          <a class="dropdown-item" href="#">Date</a>
+                          <a class="dropdown-item" href="#">Top Comments</a>
+                        </div>
+                    </span>
+                  </div>
+                  <div class="public-comment">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Commenting publicly as ...."></textarea>
+                    <button type="submit" class="btn btn-info mt-3">Comments</button>
+
+                    <div class="card mt-5 mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="images/pingu.jpeg" class="img img-rounded img-fluid"/>
+                                    <p class="text-secondary text-center">40 minutes ago</p>
+                                </div>
+                                <div class="col-10">
+                                    <p>
+                                        <a class="mt-3 mt-md-4" href="https://www.youtube.com/channel/UCwQJ9avKgKMsPF3EgDw9DyQ">
+                                            <strong>PinguCoder</strong>
+                                        </a>
+                                        <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                        <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                        <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                        <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                        <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                   </p>
+                                   <div class="clearfix"></div>
+                                    <p>Good job. Keep going.</p>
+                                    <p>
+                                        <a class="float-right btn text-white btn-info ml-2 mt-4 reply"> 
+                                            <i class="fa fa-reply"></i> Reply</a>
+                                        <a class="float-right btn text-white btn-info mt-4"> 
+                                            <i class="fa fa-heart"></i>Like</a>
+                                   </p>
+                                </div>
+                            </div>
+                            <div class="card card-inner ms-5 mt-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <img src="images/anwlog.png" class="img img-rounded img-fluid"/>
+                                            <p class="text-secondary text-center reply-time">20 minutes ago</p>
+                                        </div>
+                                        <div class="col-10 mt-3 mt-md-4">
+                                            <p><a href="chanel.html"><strong>Anwer Aloui</strong></a></p>
+                                            <p>Thanks PinguCoder</p>
+                                            <p>
+                                                <a class="float-right btn text-white btn-info mt-4"> 
+                                                    <i class="fa fa-heart"></i> Like</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col lg-5 order-1 order-lg-2">
+                      <p>Suggestions</p>
+                      <hr>
+                    <div class="card  p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <a href="watch.html">
+                                    <img class="w-100 h-100" src="images/javascript.jpg" alt="">
+                                    <time>1:00:00</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html"><b><p>JavaScript Full Courses in 1 hour</p></b></a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>1.6M views</span>
+                                    </small>
+                                    <a href="channel.html" class="channel-img d-sm-block ml-3 ml-sm-0 mt-2">
+                                        <img src="images/anwlog.png" alt="" width="30" class="search-img rounded-circle">
+                                        <span class="card-text">Anwer Aloui</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <a href="watch.html">
+                                    <img class="w-100 h-100" src="images/python.jpg" alt="">
+                                    <time>14:33</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html"><b><p>Learn Python-Full Course </p></b></a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>1.6M views</span>
+                                    </small>
+                                    <a href="channel.html" class="channel-img d-sm-block ml-3 ml-sm-0 mt-2">
+                                        <img src="images/anwlog.png" alt="" width="30" class="search-img rounded-circle">
+                                        <span class="card-text">Anwer Aloui</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <a href="watch.html">
+                                    <img class="w-100 h-100" src="images/ruby.jpg" alt="">
+                                    <time>1:14:33</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html"><b><p>Ruby Tutorial</p></b></a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>1.6M views</span>
+                                    </small>
+                                    <a href="channel.html" class="channel-img d-sm-block ml-3 ml-sm-0 mt-2">
+                                        <img src="images/anwlog.png" alt="" width="30" class="search-img rounded-circle">
+                                        <span class="card-text">Anwer Aloui</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <a href="watch.html">
+                                    <img class="w-100 h-100" src="images/Brandenburg.jpg" alt="">
+                                    <time>14:33</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html"><b><p>Brandenburg Germany</p></b></a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>1.6M views</span>
+                                    </small>
+                                    <a href="channel.html" class="channel-img d-sm-block ml-3 ml-sm-0 mt-2">
+                                        <img src="images/anwlog.png" alt="" width="30" class="search-img rounded-circle">
+                                        <span class="card-text">Anwer Aloui</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 mb-4">
+                      <div class="row">
+                          <div class="col-sm-5">
+                              <a href="watch.html">
+                                  <img class="w-100 h-100" src="images/machine.jpg" alt="">
+                                  <time>14:33</time>
+                                  <i class="fas fa-play fa-2x"></i>
+                              </a>
+                          </div>
+                          <div class="col-sm-7">
+                              <div class="card-block">
+                                  <a href="watch.html"><b><p>Machine Learning </p></b></a>
+                                  <small class="text-muted">
+                                      <i class="fas fa-film"></i> <span>1.6M views</span>
+                                  </small>
+                                  <a href="channel.html" class="channel-img d-sm-block ml-3 ml-sm-0 mt-2">
+                                      <img src="images/anwlog.png" alt="" width="30" class="search-img rounded-circle">
+                                      <span class="card-text">Anwer Aloui</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  
+    
+<script src="https://kit.fontawesome.com/597cb1f685.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<script src="js/watch.js"></script>
+    
+</body>
+</html>

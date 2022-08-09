@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>YouTuBy | chanel</title>
+     <script src="https://kit.fontawesome.com/fc601b6baf.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="css/chanel.css">
+     <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="mt-5 ">
+  <div class="layer"></div>
+  <div id="top-menu">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+        <i class="fas fa-bars fa-lg" id="toggler"></i>
+            <b>
+                <a class="navbar-brand m-2" href="youtuby.html">
+                    YouTuBy <span><i class="fas fa-play-circle logo"></i></span></a>
+                  </a>
+            </b>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto  ">
+                <li class="nav-item first-list-element " tabindex="3">
+                  <a class="nav-link px-3 ml-1 mr-3" href="youtuby.html">Suggested </a>
+                </li>
+                <li class="nav-item " tabindex="4">
+                  <a class="nav-link px-3 ml-1 mr-4 " href="new.html">New</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link px-3 ml-1 mr-4" href="trending.html" tabindex="1">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-0 " href="history.html" tabindex="1">History</a>
+                </li>
+                
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" >
+                <button onclick="location.href='search.html';" class="btn btn-outline-info search my-2 my-sm-0 " type="submit">Search</button>
+              </div>
+            </div>
+              <i class="fas fa-search mr-4 search-icon"></i>
+              <a class="nav-link login" href="#" data-toggle="modal" data-target="#loginModel" >Sign In</a>
+            
+        </nav>
+        <input type="search" class="form-control search-input" placeholder="search...">
+                        <!-- Sign In & Sign Up -->
+                        <div class="modal fade" id="loginModel" tabindex="-1">
+                          <div class="modal-dialog model-dialog-centered">
+                            <div class="modal-content">
+                              <head><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/></head>
+                                    <div class="container-fluid ">
+                                      <div class="row sign-in">
+                                        <h1><i class="fa fa-lock" aria-hidden="true"></i> Login</h1>
+                                            </div><br /><br />
+                                            
+                                                      <div class="input-group ml-2">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                                                    </div>
+                                                    <input type="text" name="" class="form-control" placeholder="username or email"/>
+                                                  </div><br />
+                                            
+                                                      <div class="input-group ml-2">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+                                                    </div>
+                                                      <input type="Password" name="" class="form-control" placeholder="password"/>
+                                                  </div><br />
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" value=""/> Remember me</label>
+                                                </div><br />
+                                                  <button type="submit" class="btn btn-info mr-2"><span class="glyphicon glyphicon-off"></span> Login</button>
+                                            
+                                            <button type="submit" class="btn btn-info "><span class="glyphicon glyphicon-remove"></span>Login with Facebook </button><br />
+                                                  <br><center><div style="border:1px solid black;height:1px;width:300px;"></div></center><br>
+                                            <div class="footer">
+                                                      <p>Don't have an Account! <a href="#">Sign Up Here</a></p>
+                                              <p>Forgot <a href="#">Password?</a></p>
+                                            </div>
+                                    
+                                      </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row ">
+                            <div id="wrap">
+                                <div class="sidebar">
+                                    <ul class="list-group list-group-flush pl-0 ">
+                                        <div class="sidebar">
+                                          <ul class="list-group list-group-flush pl-0">
+                                              <a href="youtuby.html" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-home ml-2 purple"></i> Home
+                                              </a>
+                                              <a href="youtuby.html" class="list-group-item list-group-item-action">
+                                                  <i class="far fa-plus-square ml-2 purple"></i> Suggested
+                                               </a>
+                                               <a href="new.html" class="list-group-item list-group-item-action">
+                                                   <i class="fab fa-algolia ml-2 purple"></i> New
+                                               </a>
+                                              <a href="trending.html" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-fire-alt ml-2 purple"></i> Trending
+                                              </a>
+                                              <a href="chanel.html" class="list-group-item list-group-item-action">
+                                                <i class="fas fa-fire-alt ml-2 purple"></i> My videos
+                                              </a>
+                                              <a href="history.html" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-history ml-2 purple"></i> History
+                                              </a>
+                                              <a href="#" class="list-group-item list-group-item-action">
+                                                  <i class="far fa-share-square ml-2 purple"></i> Subscriptions
+                                              </a>
+                                              <a href="#" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-film ml-2 purple"></i> Movies and Shows
+                                              </a>
+                                              <a href="#" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-gamepad ml-2 purple"></i> Video Games
+                                              </a>
+                                              <a href="#" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-tshirt ml-2 purple"></i> Fashion and beauty
+                                              </a>
+                                              <a href="https://www.youtube.com/channel/UCwQJ9avKgKMsPF3EgDw9DyQ" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-graduation-cap ml-2 purple"></i> Educational content
+                                              </a>
+                                              <a href="#" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-cog ml-2 purple"></i> Settings
+                                              </a>
+                                              <a href="#" class="list-group-item list-group-item-action">
+                                                  <i class="fas fa-question-circle ml-2 purple"></i> Help
+                                              </a>
+                                              <a href="https://github.com/alouianwer" class="ml-2 mb-5">Front-end Developer <br>Anwer Aloui<br>
+                                                  &copy; 2022
+                                                </a>
+                                            </ul>
+                                        </div>
+                                      </ul>
+                                  </div>
+                            </div>
+                          </div>
+    <div class="channel-page">
+    <div class="container-fluid">
+      <div class="row logo-chanel">
+        <div class="col-12">      
+        <div class="banner position-relative">
+            <img class="img-fluid w-100" src="images/Anouar.png" alt="">
+            <div class="social-media position-absolute bg-none p-1" style="bottom: 0px; right: 18px;">
+              <a href="#" title="Follow us on facebook" class="ml-1">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" title="Follow us on twitter" class="ml-1">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" title="Follow us on twitter" class="ml-1">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" title="Anwer Aloui" class="ml-1">
+                Anwer Aloui
+                <img src="images/anwlog.png" alt="Anwer Aloui" width="30px">
+              </a>
+              <p style="color: #717171;" class="ml-5">300K subscribers</p>
+            </div>
+            <div class="follow position-absolute" style="bottom: 13px; left: 18px;">
+              <button class="btn btn-info">SUBSCRIBED</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto w-100 px-0">                
+              <ul class="navbar-nav mx-auto  pl-0">
+                  <li class="nav-item active mr-2">
+                      <a class="nav-link" href="#">Home</span></a>
+                  </li>
+                  <li class="nav-item mr-2">
+                      <a class="nav-link" href="#">Videos</a>
+                  </li>
+                  <li class="nav-item mr-2">
+                      <a class="nav-link" href="#">Playlists</a>
+                  </li>
+                  <li class="nav-item mr-2">
+                      <a class="nav-link" href="#">Channels</a>
+                  </li>
+                  <li class="nav-item mr-2">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item searchbar">
+                    <input class="form-control-menu search-input-menu " type="search" name="" placeholder="Search...">
+                    <a href="#" class="search-icon-menu"><i class="fa-solid fa-magnifying-glass" ></i></a>
+                  </li> 
+              </ul>
+          </nav>
+          
+          <input type="search" class=" form-control search-input-mobile" placeholder="search..." >
+        </div>
+      <div class="video-section bg-white p-2 mt-5 ml-2">
+        <div class=" border-0">
+
+          <div class="row ">
+            <div class="col-lg-7">
+                <video src="video/videochanel.mp4" controls poster="images/Anwerportfolio.png" autoplay muted class="w-100">
+                  <track kind="captions" src=".vtt" srclang="ENG" label="Englisch" default>
+                  <track kind="captions" src=".vtt" srclang="DE" label="German" default>
+                  Your browser does not support the element<code>video</code>
+                </video>
+            </div>
+              <div class="col-lg-5 mt-3">
+                <div class="card-head mb-2">
+                    <small class="text-muted">
+                        <i class="fas fa-film"></i> <span>3k views</span>
+                        <i class="fas fa-clock"></i> <span>7 months ago</span>
+                    </small>
+                </div>
+                <div class="card-block ml-3">
+                  <a href="watch.html"><h4> How to Create a Responsive Personal Portfolio Website Using HTML CSS JavaScript </h4></a>
+                        <p>  In today's tutorial, you will learn how to make a complete responsive personal portfolio website design by using HTML CSS and Vanilla JavaScript from scratch. I hope you will like this portfolio website design. Feel free to download the source code of this responsive personal portfolio website .
+                          Main Features ***
+                            <span id="dots"> ...</span><ol id="more" >
+                            <li>  High-quality Design</li>
+                            <li>  Built-with HTML5 , CSS3 and JavaScript</li>
+                            <li>  100% Responsive Design</li>
+                            <li>  Clean Code</li>
+                            <li>  Well-commented code</li>
+                            <li>  Live Style Switcher</li>
+                            <li>  5 Color Skins</li>
+                            <li>  Light/Dark</li>  
+                        </ol>
+                        </p>
+                        <button class="btn mb-3" id="myBtn">Read More</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="latest-downoald">
+        <div class="container">
+          <p class="mt-4">Last Updates<i class="fas fa-play fa-1x m-3"></i>Play All</p>
+          <div class="row card-content m-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/restfull.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Explaining the RESTful Philosophy - Learn How to Build Rest Programming Interfaces | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 3k views</span>
+                      <i class="fas fa-clock"></i> <span>5 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/machine.jpg" alt="Card image cap">
+                          <time>15:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Deep Learning | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 31k views</span>
+                      <i class="fas fa-clock"></i> <span>1 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/javascript.jpg" alt="Card image cap">
+                          <time>15:14:25</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Learn Javascript Web App Development | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 80k views</span>
+                      <i class="fas fa-clock"></i> <span>2 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/unemployment.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">How do you hire the best employees? | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 1M views</span>
+                      <i class="fas fa-clock"></i> <span>2 years ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/Berlin.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Discover Germany Berlin| Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 900k views</span>
+                      <i class="fas fa-clock"></i> <span>6 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/Brandenburg.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Discover Germany A quick look at Brandenburg | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 800k views</span>
+                      <i class="fas fa-clock"></i> <span>6 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+          
+          </div>
+          <p class="mt-4">Programming Tutorials<i class="fas fa-play fa-1x m-3"></i>Play All</p>
+          <div class="row card-content m-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/restfull.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Explaining the RESTful Philosophy - Learn How to Build Rest Programming Interfaces | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 3k views</span>
+                      <i class="fas fa-clock"></i> <span>5 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/machine.jpg" alt="Card image cap">
+                          <time>15:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Deep Learning | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 31k views</span>
+                      <i class="fas fa-clock"></i> <span>1 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/javascript.jpg" alt="Card image cap">
+                          <time>15:14:25</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Learn Javascript Web App Development | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 80k views</span>
+                      <i class="fas fa-clock"></i> <span>2 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/unemployment.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">How do you hire the best employees? | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 1M views</span>
+                      <i class="fas fa-clock"></i> <span>2 years ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/Berlin.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Discover Germany Berlin| Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 900k views</span>
+                      <i class="fas fa-clock"></i> <span>6 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/Brandenburg.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Discover Germany A quick look at Brandenburg | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 800k views</span>
+                      <i class="fas fa-clock"></i> <span>6 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/react.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">React JS Full Course 2022  Build an App and Master React  | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 3k views</span>
+                      <i class="fas fa-clock"></i> <span>5 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                  <div class="card-icons">
+                      <a href="watch.html">
+                          <img class="card-img-top" src="images/python.jpg" alt="Card image cap">
+                          <time>5:14</time>
+                          <i class="fas fa-play fa-2x"></i>
+                      </a>
+                  </div>
+                  <a href="watch.html">
+                      <div class="card-body p-0">
+                          <p class="card-title">Python for Beginners | Anwer Aloui</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                  <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> 3k views</span>
+                      <i class="fas fa-clock"></i> <span>5 months ago</span>
+                  </small>
+                  </div>
+                  <a href="chanel.html" class="channel-img">
+                  <img src="images/anwlog.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Anwer Aloui</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+<script src="https://kit.fontawesome.com/597cb1f685.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<script src="js/chanel.js"></script>
+<script src="js/watch.js"></script>
+</body>
+</html>

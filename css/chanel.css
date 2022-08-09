@@ -1,0 +1,93 @@
+.channel-page .navbar-nav .nav-item{
+    display: inline-block;
+    font-size: 18px;
+}
+.searchbar{
+    height: 30px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 4px;
+    padding-right: 10px;
+}
+
+.search-input-menu{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 10px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search-input-menu{
+
+    padding: 0 15px;
+    width: 200px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search-icon-menu{
+    color: #e74c3c;
+}
+
+
+.search-input-mobile {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border: none !important;
+    padding: 6px 23px;
+    height: 60px;
+    background-color: #efeeee;
+    display: none;
+    
+    z-index: 1;
+}
+.search-input-mobile:focus {
+    background-color: #efeeee;
+    border-color: none !important;
+}
+input.search-input-mobile:focus {
+    box-shadow: none !important;
+}
+
+.channel-page .video-section .card:hover {
+    transform: translateY(0%);
+}
+time {
+    font-size: 13px;
+}
+@media (max-width: 593px) {
+    /*Decrease the font size and annotation menu buttons to come in one row*/
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 13px;
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+@media (min-width: 594px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+
+@media (max-width: 991px) {
+    .channel-page .navbar-nav {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1115px) {
+    .search-input-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width : 820px) {
+    .search-input-menu {
+        display: none !important;
+    }
+    
+}
